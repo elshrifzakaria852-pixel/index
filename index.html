@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>دنيا السبوع - علب و لوازم السبوع</title>
+<title>دنيا السبوع بطنطا للوازم السبوع والمناسبات السعيدة</title>
 <link rel="icon" href="logo.png">
 <style>
 :root{--brown:#7c2d12;--gold:#fbbf24;--bg:#fffaf7}
@@ -11,25 +11,23 @@
 body{margin:0;font-family:Tahoma,Arial;background:var(--bg);color:#3a2a2a}
 header{background:#fff;padding:10px 4%;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #fde68a;position:sticky;top:0;z-index:20}
 .logo-box{display:flex;align-items:center;gap:10px}
-.logo-box img{width:68px;height:68px;border-radius:50%;object-fit:cover;border:3px solid var(--gold)}
+.logo-box img{width:68px;height:68px;border-radius:50%;border:3px solid var(--gold);object-fit:cover}
 .hero{background:var(--brown);color:#fff;padding:26px 10px;text-align:center}
-.hero h1{margin:0;font-size:26px}
-.hero p{margin:6px 0 0;opacity:.9}
+.hero h1{margin:0;font-size:24px}
+.hero p{margin:8px 0 0;opacity:.9}
 .tabs{display:flex;gap:8px;justify-content:center;padding:14px;background:#fff;position:sticky;top:88px;z-index:15;flex-wrap:wrap}
 .tab{padding:10px 22px;border-radius:30px;border:1px solid #fde68a;background:#fff7ed;color:var(--brown);font-weight:800;cursor:pointer}
-.tab.active{background:var(--brown);color:#fff;border-color:var(--brown)}
-.wrap{max-width:1000px;margin:auto;padding:20px}
-.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
-.card{background:#fff;border-radius:18px;padding:12px;box-shadow:0 4px 14px rgba(0,0,0,.08);text-align:center;transition:.2s}
-.card:hover{transform:translateY(-3px)}
-.card img{width:100%;height:300px;object-fit:contain;background:#fffcf5;border-radius:12px}
-.card h3{font-size:15px;margin:10px 0 4px;height:40px;overflow:hidden}
-.price{color:#ea580c;font-weight:900;font-size:22px;margin:6px 0}
-.btn{width:100%;background:var(--brown);color:#fff;border:0;padding:10px;border-radius:10px;font-weight:800;cursor:pointer}
-.btn:hover{background:#5a1f0d}
+.tab.active{background:var(--brown);color:#fff}
+.wrap{max-width:1100px;margin:auto;padding:20px}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:16px}
+.card{background:#fff;border-radius:18px;padding:12px;box-shadow:0 4px 14px rgba(0,0,0,.08);text-align:center}
+.card img{width:100%;height:320px;object-fit:contain;border-radius:12px;background:#fffcf5}
+.price{color:#ea580c;font-weight:900;font-size:26px;margin:10px 0}
+.btn{width:100%;background:#25D366;color:#fff;border:0;padding:11px;border-radius:12px;font-weight:900;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px}
+.btn:hover{background:#1ebe57}
 .hide{display:none!important}
-footer{background:#1f2937;color:#d1d5db;text-align:center;padding:22px;margin-top:30px;font-size:14px}
-footer a{color:var(--gold);text-decoration:none}
+footer{background:#1f2937;color:#d1d5db;text-align:center;padding:22px;margin-top:30px}
+footer a{color:var(--gold);text-decoration:none;font-weight:800}
 </style>
 </head>
 <body>
@@ -43,8 +41,8 @@ footer a{color:var(--gold);text-decoration:none}
 </header>
 
 <div class="hero">
-<h1>دنيا السبوع للمناسبات ولوازم السبوع</h1>
-<p>علب سبوع - شمع - شيالة - كروت - هدايا بـ 30 جنيه</p>
+<h1>دنيا السبوع بطنطا للوازم السبوع والمناسبات السعيدة</h1>
+<p>علب سبوع - لوازم سبوع - هدايا وألعاب - كل حاجة بـ 30 جنيه</p>
 </div>
 
 <div class="tabs">
@@ -56,19 +54,21 @@ footer a{color:var(--gold);text-decoration:none}
 <div class="wrap">
 <div class="products" id="products">
 
-<!-- المنتج الوحيد الحالي - بـ 30 جنيه -->
+<!-- علب سبوع -->
 <div class="card" data-cat="علب">
-<img src="IMG-20261026-WA9678.jpg" alt="علبة عنبر">
-<h3>علبة هدايا عنبر - فازة و وردة حمراء</h3>
+<img src="IMG-20261026-WA9678.jpg">
 <div class="price">30 جنيه</div>
-<button class="btn" onclick="order('علبة عنبر 30ج')">اطلب واتساب</button>
+<button class="btn" onclick="order('علبة السبوع - 30 جنيه')">📲 واتساب</button>
 </div>
+
+<!-- لوازم سبوع - هتضيفي صورها بعدين -->
+<!-- الألعاب - هتضيفي صورها بعدين -->
 
 </div>
 </div>
 
 <footer>
-دنيا السبوع - طنطا - توصيل لكل المحافظات<br>
+دنيا السبوع بطنطا للوازم السبوع والمناسبات السعيدة - توصيل لكل المحافظات<br>
 <a href="https://wa.me/201000802053" target="_blank">واتساب: 01000802053</a>
 </footer>
 
@@ -77,16 +77,21 @@ function filterCat(cat,btn){
 document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
 btn.classList.add('active');
 document.querySelectorAll('.card').forEach(c=>{
-if(c.dataset.cat===cat) c.classList.remove('hide');
-else c.classList.add('hide');
+c.classList.toggle('hide',c.dataset.cat!==cat);
 });
-// لو مفيش منتجات في القسم يظهر رسالة
-let visible=document.querySelectorAll('.card:not(.hide)').length;
-if(visible===0){
-if(!document.getElementById('empty')){let d=document.createElement('div');d.id='empty';d.style='grid-column:1/-1;padding:30px;color:#999';d.innerHTML='لسه مفيش منتجات في القسم ده - ضيفي بعدين';document.getElementById('products').appendChild(d);}
-}else{let e=document.getElementById('empty');if(e)e.remove();}
+let vis=document.querySelectorAll('.card:not(.hide)').length;
+let old=document.getElementById('empty');
+if(old) old.remove();
+if(vis===0){
+let d=document.createElement('div');d.id='empty';
+d.style='grid-column:1/-1;padding:30px;text-align:center;color:#999;background:#fff;border-radius:12px';
+d.innerText='لسه مفيش منتجات في القسم ده';
+document.getElementById('products').appendChild(d);
 }
-function order(name){window.open('https://wa.me/201000802053?text=السلام عليكم عايز اطلب: '+encodeURIComponent(name),'_blank');}
+}
+function order(name){
+window.open('https://wa.me/201000802053?text=السلام عليكم، عايز اطلب: '+encodeURIComponent(name),'_blank');
+}
 </script>
 
 </body>
