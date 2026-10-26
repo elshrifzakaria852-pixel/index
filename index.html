@@ -2,89 +2,26 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دنيا السبوع للمناسبات ولوازم السبوع | طنطا</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دنيا السبوع</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Cairo',sans-serif}
-body{background:#fffaf7}
-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #fde68a;display:flex;justify-content:space-between;align-items:center;padding:12px 4%}
-.logo{display:flex;align-items:center;gap:8px;font-weight:800;color:#7c2d12;font-size:18px}
-.logo-icon{width:40px;height:40px;background:#7c2d12;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
-.logo span{color:#ea580c}
-.cart-btn{position:relative;background:#7c2d12;color:#fff;border:none;padding:10px 20px;border-radius:30px;font-weight:800;cursor:pointer}
-#cart-count{position:absolute;top:-6px;left:-6px;background:red;color:#fff;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px}
-.shipping{background:#7c2d12;color:#fff;text-align:center;padding:8px;font-size:13px;font-weight:700}
-.shipping a{color:#ffedd5;text-decoration:none;font-weight:800}
-.hero{background:linear-gradient(135deg,#7c2d12,#ea580c);color:#fff;text-align:center;padding:25px 10px}
-.hero h1{font-size:22px;margin-bottom:5px}
-.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px;padding:18px 4%}
-.card{background:#fff;border-radius:16px;padding:12px;box-shadow:0 4px 15px rgba(0,0,0,0.07);border:1px solid #fff1e6;text-align:center}
-.card img{width:100%;height:200px;object-fit:cover;border-radius:12px;background:#fff7ed}
-.card h3{font-size:14px;color:#431407;margin:10px 0 5px;line-height:1.4}
-.price{color:#ea580c;font-weight:800;font-size:16px}
-.add-btn{width:100%;background:#7c2d12;color:#fff;border:none;padding:9px;border-radius:10px;font-weight:800;cursor:pointer;margin-top:8px}
-#cart-drawer{position:fixed;top:0;left:-100%;width:90%;max-width:380px;height:100%;background:#fff;z-index:300;transition:0.3s;padding:20px;display:flex;flex-direction:column;box-shadow:0 0 30px rgba(0,0,0,0.2)}
-#cart-drawer.open{left:0}
-.overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:none;z-index:250}
-.overlay.show{display:block}
-footer{background:#431407;color:#ffedd5;padding:25px;text-align:center;line-height:1.9}
-.whats-float{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;text-decoration:none;z-index:400;box-shadow:0 5px 18px rgba(0,0,0,0.25)}
+body{margin:0;font-family:Tahoma;background:#fffaf7;text-align:center}
+header{background:#fff;padding:12px;font-weight:800;color:#7c2d12;border-bottom:1px solid #fde68a;position:sticky;top:0}
+.hero{background:#7c2d12;color:#fff;padding:20px}
+.card{max-width:400px;margin:20px auto;background:#fff;padding:15px;border-radius:18px;box-shadow:0 6px 20px #0001}
+.card img{width:100%;height:480px;object-fit:contain;background:#fff;border-radius:12px}
+.price{color:#ea580c;font-size:28px;font-weight:800;margin:12px}
+button{width:100%;background:#7c2d12;color:#fff;border:0;padding:14px;border-radius:12px;font-weight:800;font-size:16px;cursor:pointer}
 </style>
 </head>
 <body>
-
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
-
-<header>
-<div class="logo"><div class="logo-icon">👶</div> دنيا <span>للسبوع</span></div>
-<button class="cart-btn" onclick="openCart()">السلة <span id="cart-count">0</span></button>
-</header>
-
-<div class="shipping">شحن داخل طنطا وجميع المحافظات - <a href="https://wa.me/201000802053">واتساب 01000802053 اضغطي هنا</a></div>
-
-<div class="hero">
-<h1>دنيا السبوع للمناسبات ولوازم السبوع</h1>
-<p>أشيك هدايا وتوزيعات السبوع - شحن فوري</p>
+<header>دنيا للسبوع للمناسبات</header>
+<div class="hero"><h2>دنيا السبوع للمناسبات ولوازم السبوع</h2><p>01000802053</p></div>
+<div class="card">
+<img src="IMG-20261026-WA9678.jpg">
+<h3>علبة هدايا عنبر - فازة ووردة</h3>
+<div class="price">30 جنيه</div>
+<button onclick="window.open('https://wa.me/201000802053?text=طلب جديد:%0Aعلبة عنبر = 30 جنيه','_blank')">اطلب الآن واتساب</button>
 </div>
-
-<div class="products" id="products"></div>
-
-<div id="cart-drawer">
-<h3 style="color:#7c2d12">سلة الطلبات 🛒</h3>
-<div id="cart-items" style="flex:1;overflow:auto;margin-top:15px"></div>
-<div style="border-top:1px dashed #fed7aa;padding-top:12px">
-<div style="display:flex;justify-content:space-between;font-weight:800;font-size:16px"><span>الإجمالي:</span><span id="total" style="color:#ea580c">0 جنيه</span></div>
-<button onclick="checkout()" style="width:100%;background:#25D366;color:#fff;border:none;padding:12px;border-radius:12px;font-weight:800;margin-top:12px;cursor:pointer;font-size:15px">إتمام الطلب واتساب ✅</button>
-<button onclick="closeCart()" style="width:100%;margin-top:8px;background:#fff7ed;border:1px solid #fed7aa;padding:9px;border-radius:10px;cursor:pointer">إغلاق</button>
-</div>
-</div>
-
-<a class="whats-float" href="https://wa.me/201000802053">💬</a>
-
-<footer>
-<strong>دنيا السبوع للمناسبات ولوازم السبوع</strong><br>
-طنطا - شحن لجميع المحافظات<br>
-<a href="https://wa.me/201000802053" style="color:#ffedd5;text-decoration:none;font-weight:800">01000802053 - دوسي للواتساب</a>
-</footer>
-
-<script>
-const WHATSAPP="201000802053";
-const products=[
-{id:1,name:"مصحف جولد",price:15,img:"https://via.placeholder.com/300x400?text=مصحف+جولد"},
-{id:2,name:"توزيعات سبوع - علبة هدايا",price:25,img:"https://via.placeholder.com/300x400?text=توزيعات+سبوع"},
-{id:3,name:"طقم سبوع مواليد",price:45,img:"https://via.placeholder.com/300x400?text=طقم+سبوع"},
-{id:4,name:"شموع سبوع",price:10,img:"https://via.placeholder.com/300x400?text=شموع+سبوع"},
-];
-let cart=[];
-function render(){document.getElementById('products').innerHTML=products.map(p=>`<div class="card"><img src="${p.img}"><h3>${p.name}</h3><div class="price">${p.price} جنيه</div><button class="add-btn" onclick="addToCart(${p.id})">أضف للسلة</button></div>`).join('');}
-render();
-function addToCart(id){let p=products.find(x=>x.id===id);let ex=cart.find(x=>x.id===id);if(ex)ex.qty++;else cart.push({...p,qty:1});update();openCart();}
-function update(){document.getElementById('cart-count').innerText=cart.reduce((s,i)=>s+i.qty,0);let d=document.getElementById('cart-items');if(!cart.length)d.innerHTML="<p style='text-align:center;color:#999;margin-top:30px'>السلة فارغة</p>";else d.innerHTML=cart.map(i=>`<div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;background:#fffaf7;padding:8px;border-radius:8px'><div><div style='font-size:13px;font-weight:700'>${i.name}</div><div style='color:#ea580c;font-weight:800'>${i.price}ج × ${i.qty}</div></div><button onclick='removeItem(${i.id})' style='color:red;background:none;border:none;font-weight:700;cursor:pointer'>حذف</button></div>`).join('');document.getElementById('total').innerText=cart.reduce((s,i)=>s+i.price*i.qty,0)+" جنيه";}
-function removeItem(id){cart=cart.filter(i=>i.id!==id);update();}
-function openCart(){document.getElementById('cart-drawer').classList.add('open');document.getElementById('overlay').classList.add('show');}
-function closeCart(){document.getElementById('cart-drawer').classList.remove('open');document.getElementById('overlay').classList.remove('show');}
-function checkout(){if(!cart.length){alert('السلة فارغة');return;}let msg="طلب جديد - دنيا السبوع للمناسبات ولوازم السبوع%0A%0A";cart.forEach(i=>{msg+=`- ${i.name} (الكمية ${i.qty}) = ${i.price*i.qty} جنيه%0A`;});msg+=`%0Aالإجمالي: ${cart.reduce((s,i)=>s+i.price*i.qty,0)} جنيه%0A%0Aالعنوان:`;window.open(`https://wa.me/${WHATSAPP}?text=${msg}`,"_blank");}
-</script>
 </body>
 </html>
